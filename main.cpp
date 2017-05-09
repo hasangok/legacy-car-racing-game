@@ -25,12 +25,12 @@ int giris(void)
      outtextxy(200,150,"Hasan's Speed");
      settextstyle(0,0,0);
      outtextxy(560,190,"Underground :)");
-     outtextxy(250,220,"Yarışmak hiç bu kadar heyecanlı olmamıştı!!!");
-     outtextxy(390,250,"Seçiminizi Yapın:");
-     outtextxy(390,280,"1: Oyuna Başla");
-     outtextxy(390,300,"2: Bir Önceki Skor");
+     outtextxy(250,220,"YarÄ±ÅŸmak hiÃ§ bu kadar heyecanlÄ± olmamÄ±ÅŸtÄ±!!!");
+     outtextxy(390,250,"SeÃ§iminizi YapÄ±n:");
+     outtextxy(390,280,"1: Oyuna BaÅŸla");
+     outtextxy(390,300,"2: Bir Ã–nceki Skor");
      outtextxy(390,320,"3: Bilgiler");
-     outtextxy(390,340,"4: Çıkış");
+     outtextxy(390,340,"4: Ã‡Ä±kÄ±ÅŸ");
      secim=getch();
      if(secim==49) return 1;
      else if(secim==50) {
@@ -40,10 +40,10 @@ int giris(void)
                    outtextxy(200,150,"Hasan's Speed");
                    settextstyle(0,0,0);
                    outtextxy(560,190,"Underground :)");
-                   outtextxy(320,220,"Bir önceki oyuncunun kayıtları");
-                   outtextxy(220,300,"Oyunda geçirdiği süre(sn)");
+                   outtextxy(320,220,"Bir Ã¶nceki oyuncunun kayÄ±tlarÄ±");
+                   outtextxy(220,300,"Oyunda geÃ§irdiÄŸi sÃ¼re(sn)");
                    line(220,320,445,320);
-                   outtextxy(530,300,"Kazandığı Puan:");
+                   outtextxy(530,300,"KazandÄ±ÄŸÄ± Puan:");
                    line(530,320,665,320);
                    fscanf(puanlar,"%lf %d",&saniye, &puan);
                    sprintf(oncekiskor,"%d",puan);
@@ -61,11 +61,11 @@ int giris(void)
                    outtextxy(200,150,"Hasan's Speed");
                    settextstyle(0,0,0);
                    outtextxy(560,190,"Bilgiler");
-                   outtextxy(170,220,"Arabanın sağlıklı hareket edebilmesi için tuşlara basılı tutmayın.");
-                   outtextxy(170,240,"Hızınıza göre puanınıza +1, +3, +5, +10 ve +15 değerleri eklenir.");
-                   outtextxy(170,260,"Yol dışına çıkarsanız puanınız 50 eksilir, hızınız azalır.");
-                   outtextxy(170,280,"Oyun süresi minimum 1 dakika, maksimum 3 dakika arasındadır.");
-                   outtextxy(170,300,"Bu süre rastgele üretilecektir. Artık ne çıkarsa şansınıza :)");
+                   outtextxy(170,220,"ArabanÄ±n saÄŸlÄ±klÄ± hareket edebilmesi iÃ§in tuÅŸlara basÄ±lÄ± tutmayÄ±n.");
+                   outtextxy(170,240,"HÄ±zÄ±nÄ±za gÃ¶re puanÄ±nÄ±za +1, +3, +5, +10 ve +15 deÄŸerleri eklenir.");
+                   outtextxy(170,260,"Yol dÄ±ÅŸÄ±na Ã§Ä±karsanÄ±z puanÄ±nÄ±z 50 eksilir, hÄ±zÄ±nÄ±z azalÄ±r.");
+                   outtextxy(170,280,"Oyun sÃ¼resi minimum 1 dakika, maksimum 3 dakika arasÄ±ndadÄ±r.");
+                   outtextxy(170,300,"Bu sÃ¼re rastgele Ã¼retilecektir. ArtÄ±k ne Ã§Ä±karsa ÅŸansÄ±nÄ±za :)");
                    secim=getch();
                    goto menu;
                    }
@@ -138,12 +138,12 @@ void puan(int *hizptr, int *puaniptr)
 void sagtaraf(void)
 {
      settextstyle(11,0,0);
-     outtextxy(860,100,"Araba Yarışı");
+     outtextxy(860,100,"Araba YarÄ±ÅŸÄ±");
      outtextxy(850,130,"Hasan's Speed");
-     outtextxy(810,300,"NOT: Sağlıklı hareket için");
-     outtextxy(810,320,"tuşlara basılı tutmayın. :)");
-     outtextxy(810,560,"Puanınız:");
-     outtextxy(810,580,"Oyunda Geçen Süre:");
+     outtextxy(810,300,"NOT: SaÄŸlÄ±klÄ± hareket iÃ§in");
+     outtextxy(810,320,"tuÅŸlara basÄ±lÄ± tutmayÄ±n. :)");
+     outtextxy(810,560,"PuanÄ±nÄ±z:");
+     outtextxy(810,580,"Oyunda GeÃ§en SÃ¼re:");
 }
 
 void bitismenusu(void)
@@ -154,8 +154,8 @@ void bitismenusu(void)
      outtextxy(150,150,"Hasan's Speed");
      settextstyle(0,0,0);
      outtextxy(530,190,"Underground");
-     outtextxy(150,240,"Puan ve süre bilgilerini sağ menüde görüyorsunuz.");
-     outtextxy(150,260,"Menüye dönmek için bir tuşa basınız...");
+     outtextxy(150,240,"Puan ve sÃ¼re bilgilerini saÄŸ menÃ¼de gÃ¶rÃ¼yorsunuz.");
+     outtextxy(150,260,"MenÃ¼ye dÃ¶nmek iÃ§in bir tuÅŸa basÄ±nÄ±z...");
      getch();
 }
 
@@ -197,11 +197,11 @@ int main(void)
             fillellipse(blt4[0],170,50,30);
             fillellipse(blt4[1],140,50,30);
             fillellipse(blt4[2],170,50,30);
-            line(0,250,800,250); //ufuk çigizi
-            line(800,0,800,600); //sağ ayraç
+            line(0,250,800,250); //ufuk Ã§igizi
+            line(800,0,800,600); //saÄŸ ayraÃ§
             sagtaraf();
             setlinestyle(2,0,0);
-            line((uyolsol+uyolsag)/2,250,350,600); //yol çigizi
+            line((uyolsol+uyolsag)/2,250,350,600); //yol Ã§igizi
             setlinestyle(0,0,0);
             line(200,600,uyolsol,250);
             line(uyolsag,250,500,600);
@@ -226,11 +226,11 @@ int main(void)
                                                                               fillellipse(blt4[0],170,50,30);
                                                                               fillellipse(blt4[1],140,50,30);
                                                                               fillellipse(blt4[2],170,50,30);
-                                                                              line(0,250,800,250); //ufuk çigizi
-                                                                              line(800,0,800,600); //sağ ayraç
+                                                                              line(0,250,800,250); //ufuk Ã§igizi
+                                                                              line(800,0,800,600); //saÄŸ ayraÃ§
                                                                               sagtaraf();
                                                                               setlinestyle(2,0,0);
-                                                                              line((uyolsol+uyolsag)/2,250,350,600); //yol çigizi
+                                                                              line((uyolsol+uyolsag)/2,250,350,600); //yol Ã§igizi
                                                                               setlinestyle(0,0,0);
                                                                               line(200,600,uyolsol,250);
                                                                               line(uyolsag,250,500,600);
@@ -239,7 +239,7 @@ int main(void)
                                                                               bar(finissol,finisy,finissag,finisy+100);
                                                                               setfillstyle(1,BLACK);
                                                                               bar(finissol,finisy,finissol+direk,finisy+200);//soldirek
-                                                                              bar(finissag,finisy,finissag-direk,finisy+200);//sağdirek
+                                                                              bar(finissag,finisy,finissag-direk,finisy+200);//saÄŸdirek
                                                                               finisy+=10;
                                                                               finissol-=5;
                                                                               finissag+=5;
